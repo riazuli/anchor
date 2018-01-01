@@ -1,0 +1,304 @@
+/*===========================
+Template Name: Anchor
+=============================*/
+
+
+
+/*===========================
+--------------------
+CSS Index
+--------------------
+
+
+***** Fonts
+***** Base CSS
+***** Padding, Margin 
+***** Background Imaages
+***** Menu CSS
+***** MMobile Menu CSS
+***** Header CSS
+***** Hero Area CSS
+***** Breadcromb CSS
+***** Owl Carousel CSS
+***** Promo Area CSS
+***** Service Area CSS
+***** Counter Area CSS
+***** CTA Area CSS
+***** Portfolio Area CSS
+***** Team Area CSS
+***** Testimonial Area CSS
+***** Sponsor Area CSS
+***** Register Form CSS
+***** Blog Area CSS
+***** Nav Menu Widget CSS
+***** FAQ Area CSS
+***** Pagination CSS
+***** Search Widget CSS
+***** Recent Post Widget CSS
+***** Blog Content CSS
+***** Blog Comment CSS
+***** Contact Area CSS
+***** Map Area CSS
+***** Footer Area CSS
+
+
+=============================*/
+
+
+
+
+/*===========================
+Fonts
+=============================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Open+Sans|Poppins:400,400i,500,500i,600,600i,700,700i');
+
+@font-face {
+    font-family: 'aileronthin';
+    src: url('../fonts/aileron_thin-webfont.woff2') format('woff2'),
+         url('../fonts/aileron_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*===========================
+Base CSS
+=============================*/
+
+/*font-family: 'Poppins', sans-serif;
+    
+    font-family: 'aileronthin', sans-serif;
+*/
+
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #838383;
+    line-height: 1.7;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+a:hover,
+a:focus {
+    text-decoration: none
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+
+
+/*===========================
+Padding, Margin
+=============================*/
+
+.section-padding {
+    padding: 100px 0px;
+}
+
+
+
+/*===========================
+Background Images
+=============================*/
+
+
+
+.hero-area{background-image: url(../img/Slider_01.jpg);}
+
+/*===========================
+Menu CSS
+=============================*/
+.main-menu ul {
+    list-style:  none;
+    padding:  0;
+    margin:  0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 2px;
+    display:  inline-block;
+    position: relative;
+}
+
+.header-area {
+    background-color: #ddd;
+}
+
+.menu-triger a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-triger a span {
+    width: 30px;
+    height:  2px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.menu-triger a span:nth-child(2) {
+    width: 70%;
+    margin-left: 30%;
+}
+
+.menu-triger a span:nth-child(3) {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.menu-right {
+    float:  right;
+    padding: 15px 0px;
+    text-align: right;
+    width: 10%;
+}
+
+.main-menu {
+    float: left;
+    text-align: right;
+    width: 90%;
+}
+
+.logo a {
+    display:  inline-block;
+    padding:  19px;
+    padding-left: 0;
+}
+
+.main-menu ul li.active a:after {
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px ;
+    background-color:#855447;
+    content:"";
+    
+}
+
+
+/*===========================
+Mobile Menu CSS
+=============================*/
+
+
+
+/*===========================
+Hero Area CSS
+=============================*/
+.hero-area {
+    height:  100%;
+    background-size:  cover;
+    background-position:  center;
+    position:  relative;
+    z-index: 1;
+}
+
+.hero-area:before {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height:  100%;
+    background-color: #000;
+    opacity: 0.3;
+    content:  "";
+    z-index: -1;
+}
+.hero-area-table {
+    display:  table;
+    width:  100%;
+    height: 100%;
+}
+
+.hero-area-table-cell {
+    display:  table-cell;
+    vertical-align: middle;
+}
+
+.hero-text h1 {font-family: 'aileronthin',
+ sans-serif;color:  #fff;
+ font-weight:  normal;
+ text-transform:  uppercase;
+ font-size: 80px;
+}
+
+.hero-text h1 span {
+    color: #a46454;
+}
+
+.hero-text h3 {
+    font-family: 'Poppins', sans-serif;
+   font-weight:  400;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 21px;
+}
+.hero-text h3 span{
+   color: #a46454;
+}
+
+.boxed-btn {
+    display:  inline-block;
+    color:  #fff;
+    background-color:  #A36353;
+    padding: 16px 70px;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+    border-radius: 50px;
+}
+
+.scroll-to-about {
+    display:  inline-block;
+    position:  absolute;
+    left:  0;
+    bottom: 0;
+    color:  #fff;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+}
+
+.scroll-to-about span {
+    display:  block;
+    margin-top: 15px;
+}
+
+/*===========================
+Owl Carousel CSS
+=============================*/
+
