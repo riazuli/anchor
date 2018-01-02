@@ -453,18 +453,21 @@ Service Area CSS
 =============================*/
 
 #service {background-size:  cover;background-position:  center center;background-color: #ddd;}
-.single-service {
+
+.service-item {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
 }
 
-.single-service .sevice-icon {
+.service-item  .service-icon {
     margin-bottom: 20px;
+    max-width: 35px;
 }
 
-.single-service h3 {
+.service-item h4 {
     text-transform: uppercase;
+    font-size: 16px;
 }
 
 
