@@ -66,7 +66,7 @@
     <!-- Header Area Start -->
 
     <!-- Hero Area Start -->
-    <div class="hero-area overlay">
+    <div class="hero-area overlay" id="home">
         <div class="hero-area-table">
             <div class="hero-area-table-cell">
                 <div class="container">
@@ -720,15 +720,16 @@
     <!-- blog area end -->
 
     <!-- contact area start -->
-    <div class="section-padding" id="contact">
+    <div class="section-padding overlay" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="section-heading text-left ">
-                        <p class="sub-title">say hello</p>
+                    <div class="section-heading text-left light">
+                        <p class="sub-title">say hellow</p>
                         <h2>Drop Us A Line</h2>
                     </div>
                     <p>Please don’t hesitate to make an apponintment by sending me a message using the contact form, or, preferably, you could send an email to anchor studio.com with a “dot co dot uk” at the end. From there we can arrange a phone or skype call and we’ll tell you about the schedule.</p>
+                    <div class="spacer-30"></div>
                     <p class="contact-info">
                         <i class="fa fa-map-marker"></i>
                         99 BARNARD ST - SUITE 111 UNITED STATES
@@ -749,7 +750,7 @@
                             <input type="text" placeholder="Your name*" required>
                             <input type="email" placeholder="Your email*" required>
                             <input type="text" placeholder="subject*" required>
-                            <textarea name="message" id="message"></textarea>
+                            <textarea name="message" id="message" placeholder="message*"></textarea>
                             <input type="submit" value="send now">
                         </form>
                     </div>
@@ -767,16 +768,18 @@
                     <div class="logo">
                         <img src="assets/img/footer-logo.png" alt="">
                     </div>
-                    <p> DESIGN WiTH <i class="fa fa-heart"></i> BY THEmEONAIR</p>
+                    <p class="footer-text"> DESIGN WiTH <i class="fa fa-heart"></i> BY THEmEONAIR</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-github"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                    <a href=""><i class="fa fa-pinterest"></i></a>
+                <div class="col-md-4 text-center ">
+                    <div class="footer-social-link">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-pinterest"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-4 text-right">
-                    <a href="" class="back-to-top">
+                    <a href="#home" class="back-to-top">
                         Back to Top
                         <img src="assets/img/back-to-top.png" alt="">
                     </a>
