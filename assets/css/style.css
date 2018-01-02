@@ -112,6 +112,10 @@ a:focus {
     outline: 0 solid
 }
 
+.grey-bg{
+    background-color: #F3F7F9;
+}
+
 .overlay{
     position: relative;
     z-index: 1;
@@ -218,6 +222,11 @@ Background Images
 .team-member-img-4{background-image: url(../img/team-member/2.jpg);}
 .team-member-img-5{background-image: url(../img/team-member/1.jpg);}
 .team-member-img-6{background-image: url(../img/team-member/3.jpg);}
+#experience{background-image: url(../img/paralax-img/fun-facts.jpg);}
+#testimonial{background-image: url(../img/Testimonial_bg.jpg);}
+.blog-image-1{background-image: url(../img/blog-img/1.jpg);}
+.blog-image-2{background-image: url(../img/blog-img/2.jpg);}
+.blog-image-3{background-image: url(../img/blog-img/3.jpg);}
 
 
 /*===========================
@@ -307,11 +316,6 @@ Menu CSS
     content:"";
     
 }
-
-
-/*===========================
-Mobile Menu CSS
-=============================*/
 
 
 
@@ -415,6 +419,33 @@ Owl Carousel CSS
     border: 2px solid #fff;
 }
 
+/*===========================
+owl carousel css
+=============================*/
+.owl-dots div {
+    display:  inline-block;
+    width:  10px;
+    height:  10px;
+    background-color:  #A26252;
+    margin:  5px;
+    border-radius: 50px;
+}
+
+.owl-dots div.active {
+    background: none;
+    border:  1px solid #A26252;
+    width:  12px;
+    height: 12px;
+}
+
+.owl-dots {
+    text-align: center;
+    display: block;
+    margin: 40px 0px;
+}
+
+
+
 
 
 /*===========================
@@ -425,9 +456,6 @@ About Area CSS
     box-shadow: 0px 4px 25px #BBBEBF;
 }
 
-#about {
-    background-color: #F3F7F9;
-}
 
 
 /*===========================
@@ -480,7 +508,6 @@ Service Area CSS
 /*===========================
 Portfolio Area CSS
 =============================*/
-#portfolio{background-color: #F2F6F8;}
 
 .portfolio-sorting {
     list-style:  none;
@@ -590,6 +617,8 @@ team Area CSS
     background-position: center top;
     position: relative;
     text-align: center;
+    box-shadow: 0px 0px 15px #BBBEBF;
+    margin: 20px;
 }
 
 .team-member-hover {
@@ -659,45 +688,239 @@ team Area CSS
     margin-top: 40px;
 }
 
-.owl-dots div {
-    display:  inline-block;
-    width:  10px;
-    height:  10px;
-    background-color:  #A26252;
-    margin:  5px;
-    border-radius: 50px;
-}
 
-.owl-dots div.active {
-    background: none;
-    border:  1px solid #A26252;
-    width:  12px;
-    height: 12px;
-}
+/*===========================
+pricing Area CSS
+=============================*/
 
-.owl-dots {
+.single-pricing-box {
+    background-color:  #929FAE;
+    color: #fff;
+    padding: 50px 40px;
     text-align: center;
+}
+
+.pricing-box-head {
+    text-transform: uppercase;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.pricing-box-head p {
+    margin-bottom: 0;
+}
+
+.pricing-box-head .price {
+    color:  #fff;
+    font-weight: normal;
+    font-size: 80px;
+    font-family:  'aileronthin',  sans-serif;
+    position: relative;
+    display:  inline-block;
+    margin-bottom: 0;
+}
+
+.pricing-box-head .price:before {
+    content: "$";
+    font-size: 35%;
+    position: absolute;
+    left: -20px;
+    top: 20px;
+}
+
+.pricing-box-head .prcing-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pricing-box-head {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.pricing-box-head:after {
+    position:  absolute;
+    left: 50%;
+    width: 70px;
+    height:  2px;
+    background-color: #fff;
+    content:  "";
+    bottom:  0;
+    margin-left: -35px;
+}
+
+.order-btn {
+    display:  inline-block;
+    border: 1px solid #fff;
+    color:  #fff;
+    padding:  12px 35px;
+    border-radius:  50px;
+    transition: 0.3s;
+    font-family:  'Montserrat', sans-serif;
+    font-weight:  700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.single-pricing-box .order-btn {
+    margin-top: 20px;
+}
+
+.single-pricing-box {
+    margin-top: 40px;
+}
+
+.order-btn:hover {
+    background-color:  #FFFFFF;
+    color: #A46454;
+}
+
+#pricing .col-md-4:nth-child(2) .single-pricing-box {
+    background-color: #A46454;
+}
+
+#pricing .col-md-4:nth-child(3) .single-pricing-box {
+    background-color:  #CDAC9E;
+}
+
+/*===========================
+Experience Area CSS
+=============================*/
+#experience {
+    background-size:  cover;
+    background-position: center center;
+}
+
+
+/*===========================
+Testimonial Area CSS
+=============================*/
+#testimonial {
+    background-size:  cover;
+    background-position: center center;
+    background-color:#fff;
+}
+
+.owl-carousel .owl-item .single-testimonial img {
+    width: auto;
+}
+
+.testimonial-list {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px #BBBEBF;
+    padding: 50px;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.author-image img {
+    max-width: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.author-image {margin-bottom: 20px;}
+
+.author-title {
+    text-transform:  uppercase;
+    font-size:  16px;
+    letter-spacing: 2px;
+}
+
+.author-title span {
+    color: #C59C92;
     display: block;
-    margin: 40px 0px;
+    font-size: 80%;
+}
+
+.single-testimonial img {
+    margin: 0 auto;
+}
+.single-testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.single-testimonial blockquote {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style:  italic;
+    font-size: 14px;
+}
+
+.single-brand {
+    background-color:  #fff;
+    height: 150px;
+    text-align: center;
+    display:  table;
+    width: 100%;
+    box-shadow: 0px 0px 15px #BBBEBF;
+}
+
+.brand-cell {
+    display:  table-cell;
+    vertical-align: middle;
+}
+
+.single-brand img {
+    max-width: 130px;
+}
+
+/*===========================
+    blog Area CSS
+=============================*/
+
+.single-blog-post {
+    background-color: #F8F8F9;
+    box-shadow: 0px 5px 15px #BBBEBF;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.blog-image {
+    height: 340px;
+    background-size:  cover;
+    background-position: center center;
+}
+
+.single-blog-post .blog-title {
+    text-transform:  uppercase;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.blog-content {
+    padding: 40px 25px;
+}
+
+.blog-content .order-btn {
+    border-color:  #A46454;
+    color: #A46454;
+    margin-top: 20px;
+}
+
+.blog-content .order-btn:hover {
+    background-color: #A46454;
+    color: #fff;
+}
+
+.blog-content .date {
+    color:  #797979;
+    margin-bottom: 20px;
 }
 
 /*===========================
 About Area CSS
 =============================*/
 
-
-
 /*===========================
 About Area CSS
 =============================*/
 
-
-
 /*===========================
 About Area CSS
 =============================*/
-
-
 
 /*===========================
 About Area CSS

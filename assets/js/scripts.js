@@ -9,12 +9,11 @@
             nav:false,
             dots:true,
             autoplay:true,
-        })
+        });
 
         $(".team-member-list").owlCarousel({
             items:3,
             loop:true,
-            margin:30,
             nav:false,
             dots:true,
             autoplay:true,
@@ -29,6 +28,15 @@
                     items:3,
                 }
             }
+        });
+
+
+        $(".testimonial-list").owlCarousel({
+            items:1,
+            loop:true,
+            nav:false,
+            dots:true,
+            autoplay:false,
         });
 
 
