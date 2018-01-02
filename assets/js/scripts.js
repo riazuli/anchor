@@ -11,106 +11,18 @@
             autoplay:true,
         });
 
-        $(".homepage-slider").on("translate.owl.carousel", function() {
-            $(".homepage-slider h2").removeClass("animated fadeInUp").css("opacity", "0");
-            $(".homepage-slider .slide-video").removeClass("animated zoomIn").css("opacity", "0");
-            $(".homepage-slider .boxed-btn").removeClass("animated fadeInLeft").css("opacity", "0");
-        });
 
-        $(".homepage-slider").on("translated.owl.carousel", function() {
-            $(".homepage-slider h2").addClass("animated fadeInUp").css("opacity", "1");
-            $(".homepage-slider .slide-video").addClass("animated zoomIn").css("opacity", "1");
-            $(".homepage-slider .boxed-btn").addClass("animated fadeInLeft").css("opacity", "1");
-        });
+        $(".portfolio-list").isotope();
         
-        $(".slide-video").modalVideo();
-        $('.slide-video').on('click', function(){
-            return false;
-        });
+        $(".portfolio-sorting li").on("click",function() {
 
-        $(".team-list").owlCarousel({
-            margin:30,
-            loop:true,
-            nav:false,
-            dots:true,
-            autoplay:true,
-            responsive:{
-                    0:{
-                        items:1,
-                    },
-                    600:{
-                        items:2,
-                    },
-                    1000:{
-                        items:3,
-                    }
-                }
-        });
+            $(".portfolio-sorting li").removeClass("active");
+            $(this).addClass("active");
 
-        $(".testimonial-list").owlCarousel({
-            margin:30,
-            loop:true,
-            nav:false,
-            dots:true,
-            autoplay:true,
-
-            responsive:{
-                    0:{
-                        items:1,
-                    },
-                    600:{
-                        items:2,
-                    },
-                    1000:{
-                        items:3,
-                    }
-                }
-        });
-
-        $(".brand-list").owlCarousel({
-            margin:30,
-            loop:true,
-            nav:false,
-            dots:false,
-            autoplay:true,
-
-            responsive:{
-                    0:{
-                        items:1,
-                    },
-                    600:{
-                        items:3,
-                    },
-                    1000:{
-                        items:5,
-                    }
-                }
-        });
-
-
-        
-        
-        $('.portfolio-filter li').on('click',function(){
-            $('.portfolio-filter li').removeClass('active');
-            $(this).addClass('active');
-
-            var filterValue = $(this).attr('data-filter');
+            var filterValue= $(this).attr("data-filter");
             $(".portfolio-list").isotope({
-             filter: filterValue,
-            masonry: {
-                columnWidth: '.col-md-3',
-                horizontalOrder: false,
-            }
-        });
-
-        });
-
-        $(".portfolio-list").isotope({
-            layoutMode: 'masonry',
-            masonry: {
-                columnWidth: '.col-md-3',
-                horizontalOrder: false,
-            }
+                filter: filterValue,
+            });
         });
 
     });

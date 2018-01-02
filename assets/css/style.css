@@ -112,6 +112,71 @@ a:focus {
     outline: 0 solid
 }
 
+.overlay{
+    position: relative;
+    z-index: 1;
+}
+
+.overlay:before {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height:  100%;
+    background-color: #2B2B2B;
+    opacity: 0.7;
+    content:  "";
+    z-index: -1;
+}
+
+.section-heading , .section-title{margin-bottom: 30px;}
+.section-heading .sub-title, .section-title .sub-title {
+    color:  #A46454;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    position: relative;
+}
+.section-title:after {
+    position:  absolute;
+    bottom:  0;
+    content:"";
+    width:  100px;
+    height:  2px;
+    left: 50%;
+    margin-left:  -50px;
+    background-color: #A46454;
+}
+
+.section-title p {
+     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 0px 40px;
+}
+
+.section-heading h2, .section-title h2 {
+    font-family:  'aileronthin',  sans-serif;
+    font-weight:  normal;
+    font-size: 45px;
+}
+
+.section-heading.light h2, .section-title.light h2 {
+    color: #fff;
+}
+.parallax{background-attachment: fixed;}
+
+.bordered-btn {
+    color:  #fff;
+    background-color:  #A36353;
+    display:  inline-block;
+    padding: 12px 45px;
+    border-radius:  50px;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 5px 12px #BBBEBF;
+}
 
 
 /*===========================
@@ -137,6 +202,17 @@ Background Images
 
 
 .hero-area{background-image: url(../img/Slider_01.jpg);}
+#process{background-image: url(../img/paralax-img/process-section.jpg);}
+#service{background-image: url(../img/Service_bg.jpg);}
+
+.portfolio-bg-1{background-image: url(../img/gallery/1.jpg);}
+.portfolio-bg-2{background-image: url(../img/gallery/2.jpg);}
+.portfolio-bg-3{background-image: url(../img/gallery/3.jpg);}
+.portfolio-bg-4{background-image: url(../img/gallery/4.jpg);}
+.portfolio-bg-5{background-image: url(../img/gallery/7.jpg);}
+.portfolio-bg-6{background-image: url(../img/gallery/6.jpg);}
+.portfolio-bg-7{background-image: url(../img/gallery/5.jpg);}
+
 
 /*===========================
 Menu CSS
@@ -244,17 +320,6 @@ Hero Area CSS
     z-index: 1;
 }
 
-.hero-area:before {
-    position:  absolute;
-    left:  0;
-    top: 0;
-    width:  100%;
-    height:  100%;
-    background-color: #2B2B2B;
-    opacity: 0.7;
-    content:  "";
-    z-index: -1;
-}
 .hero-area-table {
     display:  table;
     width:  100%;
@@ -333,7 +398,7 @@ Owl Carousel CSS
 .hero-area .owl-dots {
     position:  absolute;
     right: -20%;
-    top: 50%;
+    top: 60%;
     height: 50px;
     margin-top: -25px;
     text-align: center;
@@ -350,32 +415,6 @@ Owl Carousel CSS
 About Area CSS
 =============================*/
 
-.section-title .sub-title {
-    color:  #A46454;
-    text-transform: uppercase;
-    font-family:  'Poppins', sans-serif;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-.section-title h2 {
-    font-family:  'aileronthin',  sans-serif;
-    font-weight:  normal;
-    font-size: 45px;
-}
-
-.bordered-btn {
-    color:  #fff;
-    background-color:  #A36353;
-    display:  inline-block;
-    padding: 12px 45px;
-    border-radius:  50px;
-    text-transform: uppercase;
-    font-family:  'Poppins', sans-serif;
-    font-weight: 600;
-    box-shadow: 0px 5px 12px #BBBEBF;
-}
-
 .who-we-are img {
     box-shadow: 0px 4px 25px #BBBEBF;
 }
@@ -386,8 +425,167 @@ About Area CSS
 
 
 /*===========================
+Process Area CSS
+=============================*/
+#process {
+    background-size:  cover;
+    background-position:  center center;
+}
+
+.single-process {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.single-process h4 {
+    color:  #fff;
+    text-transform:  uppercase;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.single-process h4 span {
+    display: block;
+}
+
+/*===========================
+Service Area CSS
+=============================*/
+
+#service {background-size:  cover;background-position:  center center;background-color: #ddd;}
+.single-service {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.single-service .sevice-icon {
+    margin-bottom: 20px;
+}
+
+.single-service h3 {
+    text-transform: uppercase;
+}
+
+
+/*===========================
+Portfolio Area CSS
+=============================*/
+#portfolio{background-color: #F2F6F8;}
+
+.portfolio-sorting {
+    list-style:  none;
+    padding:  0;
+    margin:  0;
+    margin: 50px 0px;
+    text-align: center;
+    color: #9ca3b1;
+}
+
+.portfolio-sorting li {
+    display:  inline-block;
+    font-family:  'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border-radius:  50px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor:  pointer;
+}
+
+.portfolio-sorting li.active {
+    background-color: #A36353;
+    color: #fff;
+}
+
+.single-portfolio {
+    height:  245px;
+    background-size:  cover;
+    background-position: center top;
+    background-color:  #BE9186;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.portfolio-list .col-md-4:nth-child(2) .single-portfolio,.portfolio-list .col-md-4:nth-child(5) .single-portfolio  {
+    height: 515px;
+}
+
+.portfolio-hover {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height: 100%;
+    display: table;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.3s;
+}
+.portfolio-hover h4 {
+    color:  #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.portfolio-hover:before {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height:  100%;
+    background-color:  #BE9186;
+    content:  "";
+    opacity:  0.7;
+    z-index: -1;
+}
+
+.portfolio-hover-cell {
+    display:  table-cell;
+    vertical-align:  middle;
+    z-index: 2;
+}
+
+.portfolio-hover a {
+    color: #fff;
+    display:  inline-block;
+    font-size:  18px;
+    border: 2px solid #fff;
+    width: 40px;
+    border-radius:  50px;
+    height: 40px;
+    line-height: 37px;
+    transition: 0.3s;
+}
+
+.portfolio-hover a:hover {
+    background-color:  #fff;
+    color: #C1978C;
+}
+.single-portfolio:hover .portfolio-hover {
+    opacity:  1;
+    transform: scale(1);
+}
+
+/*===========================
 About Area CSS
 =============================*/
+
+
+
+/*===========================
+About Area CSS
+=============================*/
+
+
+
+/*===========================
+About Area CSS
+=============================*/
+
 
 
 /*===========================
