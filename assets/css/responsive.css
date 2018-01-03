@@ -1,10 +1,44 @@
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-
+.hero-text h1 {
+    font-size: 55px;
+}
     
 }
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-area .owl-dots {
+    position: absolute;
+    right: 0;
+}
+.scroll-to-about {
+    left: 5%;
+}
+.who-we-are
+ img {
+    width: 100%;
+}
+.portfolio-list .col-md-4:nth-child(6) .single-portfolio {
+    height: 515px;
+}
+.who-we-are,.contact-form  {
+    margin-top: 40px;
+}
+
+.single-pricing-box, .single-blog-post {
+    margin: 40px 80px;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
 
 }
 
@@ -12,10 +46,48 @@
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
 
-    
+.hero-text h1 {
+    font-size: 40px;
+}
+.hero-text h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.hero-text {
+    padding: 90px 0px;
+}
+.hero-area {
+    min-height: 535px;
+}
+.boxed-btn {
+    padding: 10px 30px;
+}
+.hero-area .owl-dots {
+    display: none;
+    position: relative;
 }
 
+.who-we-are,.contact-form  {
+    margin-top: 40px;
+}
+.portfolio-sorting li {
+    padding: 10px 20px;
+    
+}
+.testimonial-list {
+    padding: 50px 10px;
+}
+
+.footer,.footer .text-right {
+    text-align: center;
+}
+.back-to-top{
+    margin-top: 15px;
+}
+}
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
-
+.hero-text {
+    padding: 120px 0px;
+}
 }
